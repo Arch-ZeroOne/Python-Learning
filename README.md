@@ -1,147 +1,132 @@
-🗓️ Phase 1: Python & Image Handling (Weeks 1–3)
-Week 1: Python Essentials
-Variables, control flow, functions, lists/dicts
+# 🌿 Plant Leaf Health Detection – Learning & Development Roadmap
 
-File I/O: reading/writing images
+This project roadmap outlines a 12+ week guided learning path to build a **Plant Disease Detection System** using **Python**, **OpenCV**, and **Deep Learning**. The goal is to detect whether a leaf is **healthy**, **infected**, or **dead** from an image input.
 
-Week 2: Object-Oriented Programming + Libraries
-Classes & modules
+---
 
-pip usage; install OpenCV, NumPy
+## 🗓️ Weekly Roadmap Overview
 
-Week 3: OpenCV Basics
-Load/display/resize images
+### ⚙️ Phase 1: Python & Image Handling (Weeks 1–3)
 
-Convert color formats (RGB/grayscale/H S V)
+#### Week 1: Python Essentials
 
-Basic filters (blur, edge detection)
+- ✅ Learn variables, control flow, functions
+- ✅ Practice lists, dictionaries
+- ✅ File I/O basics – read/write image files
 
-🎯 Mini-project: Detect edges or color patterns from leaf images
+#### Week 2: Object-Oriented Programming + Libraries
 
-📷 Phase 2: Image Processing & Disease Indicators (Weeks 4–5)
-Week 4: Preprocessing & Segmentation
-Color segmentation in HSV
+- ✅ Learn classes, objects, and modules
+- ✅ Learn to use `pip` and install:
+  - OpenCV (`opencv-python`)
+  - NumPy (`numpy`)
 
-Contour detection for isolating leaves 
-pythongeeks.org
-+15
-stackoverflow.com
-+15
-youtube.com
-+15
-youtube.com
-universe.roboflow.com
-+5
-youtube.com
-+5
-codersarts.com
-+5
-wellsr.com
-+13
-medium.com
-+13
-youtube.com
-+13
-meegle.com
-kaggle.com
-+3
-codersarts.com
-+3
-sist.sathyabama.ac.in
-+3
+#### Week 3: OpenCV Basics
 
-Week 5: Feature Extraction
-Extract color, texture, shape features
+- ✅ Load, display, and resize images
+- ✅ Convert between RGB, Grayscale, HSV
+- ✅ Apply basic filters: blur, edge detection
 
-Optional: use OpenCV to calculate disease severity (e.g., spot area ratio) 
-meegle.com
-medium.com
+🎯 **Mini-project**: Edge or color pattern detection on leaf images
 
-🎯 Mini-project: Segment leaf and highlight suspect diseased patches
+---
 
-🤖 Phase 3: Machine Learning Model (Weeks 6–8)
-Week 6: Intro to CNNs & Keras/TensorFlow
-Learn basics: layers, activations, loss, optimizers
+### 📷 Phase 2: Image Processing & Disease Indicators (Weeks 4–5)
 
-Week 7: Dataset Preparation
-Download Plant Village or PlantDoc 
-meegle.com
-+1
-github.com
-+1
-scribd.com
-+1
-geeksforgeeks.org
-+1
-arxiv.org
-+1
-arxiv.org
-+1
+#### Week 4: Preprocessing & Segmentation
 
-Organize train/test directories; use ImageDataGenerator
+- ✅ Perform color segmentation in HSV
+- ✅ Detect contours to isolate leaf region
 
-Week 8: Model Training & Evaluation
-Build CNN, train (5–10 epochs), evaluate accuracy ~90%+ 
-kaggle.com
-+15
-wellsr.com
-+15
-codersarts.com
-+15
-youtube.com
+#### Week 5: Feature Extraction
 
-Save model (e.g., .h5 file)
+- ✅ Extract shape, texture, color features
+- ⭕ (Optional) Calculate disease severity (e.g., spot area ratio)
 
-🎯 Mini-project: Train model to classify healthy vs infected vs dead leaves
+🎯 **Mini-project**: Segment leaf and highlight suspect diseased patches
 
-🌐 Phase 4: App Integration (Weeks 9–11)
-Week 9: Choose a Framework
-Streamlit: faster, interactive 
-github.com
-github.com
+---
 
-Flask or FastAPI: good for learning APIs
+### 🤖 Phase 3: Machine Learning Model (Weeks 6–8)
 
-Week 10: Develop Upload → Inference Pipeline
-Build front-end to upload image
+#### Week 6: Intro to CNNs & Keras/TensorFlow
 
-Load model; pass image → preprocessing → predict
+- ✅ Understand layers, activations, loss, optimizers
+- ✅ Install TensorFlow/Keras
 
-Week 11: Polish UI & Testing
-Display leaf and predicted label (“Healthy”, “Infected”, “Dead”)
+#### Week 7: Dataset Preparation
 
-Add confidence scores and simple styling
+- ✅ Download datasets (e.g., [PlantVillage](https://www.kaggle.com/datasets/emmarex/plantdisease))
+- ✅ Organize train/test/validation folders
+- ✅ Use `ImageDataGenerator` for preprocessing
 
-🚀 Phase 5: Optional Deployment & Enhancement (Week 12+)
-Deploy using Heroku/Render or Hugging Face Spaces 
-kaggle.com
-+3
-github.com
-+3
-pythongeeks.org
-+3
-wellsr.com
-+12
-codersarts.com
-+12
-kaggle.com
-+12
-github.com
-+5
-m.youtube.com
-+5
-kaggle.com
-+5
+#### Week 8: Model Training & Evaluation
 
-Add features: support mobile upload, multiple plant types
+- ✅ Build and train CNN (5–10 epochs)
+- ✅ Aim for accuracy ~90%+
+- ✅ Save model (`.h5` format)
 
-Improve model: apply data augmentation, transfer learning, segmentation
+🎯 **Mini-project**: Train a model to classify Healthy vs Infected vs Dead leaves
 
-📌 Weekly 1‑Hour Breakdown
-10 min – Read docs or watch a short tutorial
+---
 
-20 min – Write/experiment with code example
+### 🌐 Phase 4: App Integration (Weeks 9–11)
 
-20 min – Build part of mini-project
+#### Week 9: Choose a Framework
 
-10 min – Log progress and save your work
+- ✅ Use **Streamlit** for faster UI
+- ⭕ (Optional) Learn Flask or FastAPI for REST API
+
+#### Week 10: Upload → Inference Pipeline
+
+- ✅ Build front-end image uploader
+- ✅ Preprocess and pass image to model
+- ✅ Return predicted class
+
+#### Week 11: UI Polish & Testing
+
+- ✅ Display uploaded leaf and predicted label
+- ✅ Show confidence scores
+- ✅ Add minimal UI styling
+
+---
+
+### 🚀 Phase 5: Deployment & Enhancement (Week 12+)
+
+- ⭕ Deploy to **Render**, **Heroku**, or **Hugging Face Spaces**
+- ⭕ Add mobile image upload support
+- ⭕ Train model for more plant types
+- ⭕ Improve model with:
+  - Data augmentation
+  - Transfer learning (e.g., MobileNetV2)
+  - Image segmentation for better accuracy
+
+---
+
+## ⏱️ Weekly Study Session Format (1-Hour / Day)
+
+| Time   | Task                                   |
+| ------ | -------------------------------------- |
+| 10 min | Read docs or watch a short tutorial    |
+| 20 min | Code & experiment with examples        |
+| 20 min | Build a small part of the mini-project |
+| 10 min | Log progress and save work             |
+
+---
+
+## 🧠 Progress Log Template (Daily)
+
+```text
+📅 Date: YYYY-MM-DD
+📍 Topic: [e.g., HSV Segmentation]
+✅ What I did:
+- Watched a video on HSV color thresholding
+- Applied OpenCV's `cv2.inRange()` on a test leaf
+
+🤔 What I learned:
+- HSV makes color filtering easier than RGB
+- Hue = color, Saturation = vibrance, Value = brightness
+
+📌 What's next:
+- Try contour detection on segmented leaves
+```
