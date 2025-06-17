@@ -30,7 +30,7 @@ print(input)
 #help(str) -> giver information about string functions
 
 
-print("Tested values: (20,30,40,50)");
+print("Tested values: (20,30,40,50)")
 #gives the minimum value
 print("Minimum value : "+str(min(20,30,40,50)))
 #gives maximum value
@@ -40,7 +40,7 @@ print("Min from the list:"+str(min([20,30,40,50])))
 #takes an array and returns the max
 print("Max from the list:"+str(max([20,30,40,50])))
 #takes only list as an argument and returns the sum of the values in the list
-print("Sum of values in list:"+str(sum([20,30,40,50])));
+print("Sum of values in list:"+str(sum([20,30,40,50])))
 
 
 
@@ -70,7 +70,7 @@ print("First Name:",first_name,"Last Name:",last_name)
 first_name,last_name,country,age,is_married = "Windyl","Monton","Philippines",20,False
 
 #Getting User Inout
-first_name = input("What is your name:");
+first_name = input("What is your name:")
 age = input("How old are you?:")
 
 print("Name:",first_name)
