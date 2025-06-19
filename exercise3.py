@@ -40,7 +40,72 @@ print("Area of the circle is ",area);
 print("Circumference of the circle is ",circumference)
 """
 
+"""
 #Calculate the slope, x-intercept and y-intercept of y = 2x -2
-y = (2 * 0) - 2
 
-print("Slope the line of  x-intercept and y-intercept of y = 2x -2 is ",)
+#we need to find
+#the slope
+#the x intercept 
+#the y intercept
+
+#y = 2x -2 -> given equation form
+#y = mx + b -> converted
+#so mx = 2x and b = -2
+
+
+#in this problem slope is 2 (the number near the x)
+mx = 2 #slope
+b = -2
+
+
+#we put it inside the parenthesis so that
+y_intercept = (0,mx)
+
+#just reverses the sign of b from -2 turns it into 2
+#! BY default the result of division in python is double
+x_value = -b / mx
+x_intercept  = (x_value,0)
+
+print("Slope = ",mx)
+print("Y Intercept = ", y_intercept)
+print("x Intercept =",x_intercept)
+#-b means flip the sign of whatever b is from positive to negative
+print(-b)
+print(b)
+"""
+
+#Slope is (m = y2-y1/x2-x1). Find the slope and Euclidean distance between point (2, 2) and point (6,10)
+
+"""
+x1 = 2
+y1 = 3
+x2 = 6
+y2  = 6
+
+#solution for slope problem
+up_down = y2 - y1
+left_right  = x2 - x1
+slope = up_down / left_right
+
+#solution for euclidean distance problem
+euclidean = math.sqrt((x2 - x1 ) ** 2  + (y2 - y1) ** 2);
+
+print("Slope is ",math.ceil(slope))
+print("Euclidean distance is ", math.ceil(euclidean))
+"""
+
+#Compare the slopes in tasks 8 and 9.
+"""
+task_8_slope  = 2;
+task_9_slope = 2;
+
+print("(Task 8 Slope : ",task_8_slope,")-"," (Task 9 Slope : ",task_9_slope,") = ",(task_8_slope - task_9_slope))
+"""
+
+
+#Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is going to be 0.
+x = -3
+y = x**2 + ((6*x) + 9)
+print("To Zero = ",y);
+
+
