@@ -102,10 +102,63 @@ task_9_slope = 2;
 print("(Task 8 Slope : ",task_8_slope,")-"," (Task 9 Slope : ",task_9_slope,") = ",(task_8_slope - task_9_slope))
 """
 
-
-#Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is going to be 0.
+"""
+#*Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is going to be 0.
 x = -3
 y = x**2 + ((6*x) + 9)
 print("To Zero = ",y);
+"""
+
+"""
+#* Find the length of 'python' and 'dragon' and make a falsy comparison statement.
+
+word1 = "Python"
+word2 = "Dragon"
+len1 = len(word1)
+len2 = len(word2)
+check = word1 == word2
+check2 = "on" in word1 and "on" in word2
+print(check)
+print(check2)
+"""
+"""
+#*I hope this course is not full of jargon. Use in operator to check if jargon is in the sentence.
+
+word = "I hope this course is not full of jargon"
+check = "jargon" in word
+"""
+
+"""
+#*Find the length of the text python and convert the value to float and convert it to string
+text_len = len("python")
+to_float = float(text_len)
+to_string = str(to_float)
+print(type(to_string))
+"""
+"""
+#* Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
+test_number = 3
+is_even = test_number % 2 == 0
+print(is_even)
+"""
+"""
+
+#* Check if the floor division of 7 by 3 is equal to the int converted value of 2.7.
+equation = 7 // 3
+print(equation)
+"""
+"""
+#*Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred years
+years = int(input("Enter number of years you have lived:"))
+seconds = 31536000 
+seconds_lived = years * seconds;
+print("You have lived for ",seconds_lived," seconds")
+"""
+
+print("1 1 1 1 1")
+print("2 1 2 4 8")
+print("3 1 3 9 27")
+print("4 1 4 16 64")
+print("5 1 5 25 125")
 
 
