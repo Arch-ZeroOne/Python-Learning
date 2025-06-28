@@ -98,35 +98,35 @@ challenge  = "thirty days of python"
 
 #* Replace tab with character spaces, default tab size is 8
 
-challenge = "thirty\tdays\tof\tpython"
+# challenge = "thirty\tdays\tof\tpython"
 #overrides the default tab space of \t to 10 tabs spaces from the default 8
 # print(challenge.expandtabs(10))
 
 # *Returns the index of the first occurence of a substring, if none it returns -1
-challenge = "thirty days of python"
+# challenge = "thirty days of python"
 # print(challenge.find('y')) # 5
 # print(challenge.find('th')) # 0
 # print(challenge.find("z")) # -1
 
 #* Returns the index of the last occurence of a substring, if none returns -1
-challenge = "thirty days of python"
+# challenge = "thirty days of python"
 # print(challenge.rfind('y')) # 16
 # print(challenge.rfind('th')) # 17
 # print(challenge.rfind("windyl")) # -1
 
 #* Formatting a string
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-age = 250
-job = 'teacher'
-country = 'Finland'
+# first_name = 'Asabeneh'
+# last_name = 'Yetayeh'
+# age = 250
+# job = 'teacher'
+# country = 'Finland'
 
 # print(f'I am {first_name} my family name is {last_name} I am currently {age} years old my current job is {job} and currently residing in {country}')
-print()
 
-radius = 10
-pi = 3.14
-area = pi * radius ** 2
+
+# radius = 10
+# pi = 3.14
+# area = pi * radius ** 2
 # print(f'The area of a circle with radius {radius} is {area}')
 
 
@@ -140,18 +140,117 @@ sub_string = 'da'
 
 #* Checks string has  alphanumeric characters
 
-challenge = 'ThirtyDaysPython'
-print(challenge.isalnum()) # true
+# challenge = 'ThirtyDaysPython'
+# print(challenge.isalnum()) # true
 
-challenge = '30DaysPython'
-print(challenge.isalnum()) # true
+# challenge = '30DaysPython'
+# print(challenge.isalnum()) # true
 
-challenge = 'thirty days of python'
-print(challenge.isalnum()) #False because of space , and space is not an alphanumeric character
+# challenge = 'thirty days of python'
+# print(challenge.isalnum()) #False because of space , and space is not an alphanumeric character
 
-challenge = 'thirty days of python 2019'
-print(challenge.isalnum()) #false because of space
+# challenge = 'thirty days of python 2019'
+# print(challenge.isalnum()) #false because of space
 
+#* Checks if all strings elements are alphabet characters
+
+# challenge = "thirty days of python"
+# print(challenge.isalpha()); # False because of space
+# challenge = "ThirtyDaysOfPython"
+# print(challenge.isalpha()) # True
+
+
+#* Checks if all character is decimal (0-9)
+# challenge = "thirty days of python"
+# print(challenge.isdecimal()) # false
+# challenge = '123'
+# print(challenge.isdecimal()) #true
+# challenge = '\u00B2'
+# print(challenge.isdecimal())
+# challenge = '12 3'
+# print(challenge.isdecimal())
+
+#* Checks if all characters in a string are number (0-9 and unicode)
+
+# challenge = "Thirty";
+# print(challenge.isdigit())
+# challenge = '30'
+# print(challenge.isdigit())
+# challenge = "\u00B2"
+# print(challenge.isdigit())
+
+#* Checks if all characters are number or number related
+
+# num = '10'
+# print(num.isnumeric()) # True
+# num = "\u00BD" # 1/2
+# print(num.isnumeric()) # True
+# num = '10.5'
+# print(num.isnumeric() ) # False
+
+#* Checks for a valid identifier
+
+# challenge = "30DaysOfPython"
+# print(challenge.isidentifier()) # False, starting with number
+# challenge = "thirty_days_of_python"
+# print(challenge.isidentifier()) # True
+
+
+#* Checks if all alphabet characters is lowercase
+
+# challenge = "thirty days of python"
+# print(challenge.islower()) #True
+# challenge = "Thirty days of python"
+# print(challenge.islower()) # False
+
+
+#* Checks if all alphabet characters is Uppercase
+
+# challenge = "thirty days of python"
+# print(challenge.isupper()) # False
+# challenge = 'THIRTY DAYS OF PYTHON'
+# print(challenge.isupper()) # True
+
+#* Returns a concetenated string
+
+# web_tech = ["HTML","CSS","Javacript", "React"]
+
+# # First item in the dot is the separator of the words from the array
+# result = " ".join(web_tech)
+# print(result)
+
+#* Removes given characters from beginning to end of the string
+# challenge = "thirty days of python"
+# print(challenge.strip('noth'))
+
+#* Replaces substring with a given string
+# challenge = "thirty days of python"
+# print(challenge.replace('python',"coding"))
+
+#* Splits a string with a given separator
+# challenge = "thirty days of python"
+# print(challenge.split())
+# challenge  = "thirty, days, of, python"
+# print(challenge.split(", "))
+
+#* Returns a title cased stringn
+# challenge = 'thirty days of python'
+# book_title = "the lion king"
+# print(challenge.title())
+# print(book_title.title())
+
+#* reverses the casing of the characters depends on their default casing
+# challenge = "thirty days of python"
+# print(challenge.swapcase())
+# challenge = "THIRTY DAYS OF PYTHON"
+# print(challenge.swapcase())
+# challenge = "Thirty Days Of Python"
+# print(challenge.swapcase())
+
+#* Checks if String starts with the specified string
+
+challenge = "thirty days of python"
+print(challenge.startswith('thirty')) #True
 
 
 
